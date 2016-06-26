@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Bridge
+﻿namespace Bridge
 {
 	class Circle : AbstractShape
 	{

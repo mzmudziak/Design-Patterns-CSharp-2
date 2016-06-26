@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Bridge
 {
-	class RedCircleDrawer : IDrawer
+	internal class RedCircleDrawer : IDrawer
 	{
 		public void draw(int r, int x, int y)
 		{

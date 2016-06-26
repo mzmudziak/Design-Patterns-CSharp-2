@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bridge
+﻿namespace Bridge
 {
 	abstract class AbstractShape
 	{
@@ -11,7 +6,7 @@ namespace Bridge
 
 		protected AbstractShape(IDrawer iDrawer)
 		{
-			this.Drawer = iDrawer;
+			Drawer = iDrawer;
 		}
 
 		public abstract void Draw();
