@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChainOfResponsibility
+﻿namespace ChainOfResponsibility
 {
 	public class Program
 	{
@@ -19,13 +13,13 @@ namespace ChainOfResponsibility
 			return errorLogger;
 		}
 
-		static void Main(string[] args)
+		private static void Main(string[] args)
 		{
-			AbstractLogger loggerChain = GetLoggerChain();
+			var loggerChain = GetLoggerChain();
 
-			loggerChain.Log(AbstractLogger.REMOTE,"This is supposed to be sent to remote logger");
-			loggerChain.Log(AbstractLogger.CONSOLE,"Log saved in console");
-			loggerChain.Log(AbstractLogger.ERROR,"ERROR 404: NOT FOUND");
+			loggerChain.Log(AbstractLogger.REMOTE, "This is supposed to be sent to remote logger");
+			loggerChain.Log(AbstractLogger.CONSOLE, "Log saved in console");
+			loggerChain.Log(AbstractLogger.ERROR, "ERROR 404: NOT FOUND");
 		}
 	}
 }
