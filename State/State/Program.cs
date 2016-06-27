@@ -10,6 +10,16 @@ namespace State
 	{
 		static void Main(string[] args)
 		{
+			Context context = new Context();
+
+			StartState start = new StartState();
+			StopState stop = new StopState();
+
+			start.Action(context);
+			Console.WriteLine(context.getState());
+
+			stop.Action(context);
+			Console.WriteLine(context.getState());
 		}
 	}
 }
