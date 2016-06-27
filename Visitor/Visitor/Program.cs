@@ -10,6 +10,9 @@ namespace Visitor
 	{
 		static void Main(string[] args)
 		{
+IComputerPart computer = new Computer();
+computer.Accept(new ComputerPartsVisitorDisplay());
+computer.Accept(new ComputerPartsVisitorUser());
 		}
 	}
 }
